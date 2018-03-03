@@ -1,0 +1,26 @@
+{
+    "name": "altitude-script-language",
+    "displayName": "Altitude Script Language",
+    "description": "One Language suport extension for altitude  script language.",
+    "version": "0.0.1",
+    "publisher": "ucavalcante",
+    "engines": {
+        "vscode": "^1.20.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "asl",
+            "aliases": ["Altitude Script", "asl"],
+            "extensions": [".ags",".irs",".gem",".agm",".irm",".wfs"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "asl",
+            "scopeName": "source.altitude",
+            "path": "./syntaxes/asl.tmLanguage.json"
+        }]
+    }
+}
