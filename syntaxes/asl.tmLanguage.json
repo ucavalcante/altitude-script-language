@@ -7,13 +7,22 @@
 		},
 		{
 			"include": "#strings"
+		},
+		{
+			"include": "#stringsWithFiB"
+		},
+		{
+			"include": "#booleans"
+		},
+		{
+			"include": "#comments"
 		}
 	],
 	"repository": {
 		"keywords": {
 			"patterns": [{
-				"name": "keyword.control.asl",
-				"match": "\\b(if|while|for|return)\\b"
+				"name": "keyword.asl",
+				"match": "\\b(if|while|for|return|var|text)\\b"
 			}]
 		},
 		"strings": {
@@ -26,7 +35,33 @@
 					"match": "\\\\."
 				}
 			]
-		}
+		},
+		"stringsWithFiB": {
+			"name": "string.quoted.double.asl",
+			"begin": "'",
+			"end": "'",
+			"patterns": [
+				{
+					"name": "constant.character.escape.asl",
+					"match": "\\$\\(|\\)"
+				}
+			]
+		},
+		"booleans":{
+			 "patterns": [
+				 { 
+					"name":"keyword.control.asl",
+					"match": "\\b(true|false)\\b"
+				}
+			 ]
+		},
+		"comments":{
+			"name": "comment",
+			"begin": "comment {",
+			"end": "}", 
+				"patterns": []
+
+			}
 	},
 	"scopeName": "source.altitude"
 }
