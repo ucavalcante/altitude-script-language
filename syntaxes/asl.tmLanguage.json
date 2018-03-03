@@ -6,6 +6,9 @@
 			"include": "#keywords"
 		},
 		{
+			"include": "#keywordsControl"
+		},
+		{
 			"include": "#strings"
 		},
 		{
@@ -16,13 +19,29 @@
 		},
 		{
 			"include": "#comments"
+		},
+		{
+			"include": "#integers"
 		}
+
 	],
 	"repository": {
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.asl",
-				"match": "\\b(if|while|for|return|var|text|number|boolean|date|time|datetime|bytestream|array of text|record|version|file version|flow view)\\b"
+				"match": "\\b(if|while|for|return|var|: text|: number|: boolean|: date|: time|: datetime|: bytestream|: record|version|file version|flow view)\\b"
+			}]
+		},
+		"keywordsControl": {
+			"patterns": [{
+				"name": "keyword.other.unit",
+				"match": "\\b(: array of )\\b"
+			}]
+		},
+		"integers": {
+			"patterns": [{
+				"name": "keyword.other.unit",
+				"match": "[^a-z.\"=]\\d*\\d"
 			}]
 		},
 		"strings": {
