@@ -34,14 +34,14 @@
 		},
 		"keywordsControl": {
 			"patterns": [{
-				"name": "keyword.other.unit",
+				"name": "keyword.control.asl",
 				"match": "\\b(: array of )\\b"
 			}]
 		},
 		"integers": {
 			"patterns": [{
-				"name": "keyword.other.unit",
-				"match": "[^a-z.\"=]\\d*\\d"
+				"name": "keyword.other.unit.asl",
+				"match": "[^A-z.\"()\\[\\]=]\\d*\\d"
 			}]
 		},
 		"strings": {
