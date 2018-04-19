@@ -62,7 +62,7 @@
 			"patterns": [
 				{
 					"name": "constant.character.escape.asl",
-					"match": "\\$\\(|\\)"
+					"match": "\\$\\(|\\)|\\\\."
 				}
 			]
 		},
