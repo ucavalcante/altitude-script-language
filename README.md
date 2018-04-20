@@ -17,7 +17,7 @@ Prior knowledge of the ASL programming language because it does not yet have the
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+Readme adjust.
 
 ### 0.0.1
 
