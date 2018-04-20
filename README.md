@@ -9,7 +9,7 @@ https://github.com/ucavalcante/altitude-script-language.git
 
 ## Features
 
-![Colorization](images/img_01.gif)
+![Colorization](images/img_01.png)
 
 ## Requirements
 
