@@ -1,0 +1,86 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Altitude Script",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#keywordsControl"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#stringsWithFiB"
+		},
+		{
+			"include": "#booleans"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#integers"
+		}
+
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.asl",
+				"match": "\\b(if|while|for|return|var|: text|: number|: boolean|: date|: time|: datetime|: bytestream|: record|version|file version|flow view)\\b"
+			}]
+		},
+		"keywordsControl": {
+			"patterns": [{
+				"name": "keyword.control.asl",
+				"match": "\\b(: array of )\\b"
+			}]
+		},
+		"integers": {
+			"patterns": [{
+				"name": "keyword.other.unit.asl",
+				"match": "[^A-z.\"()\\[\\]=]\\d*\\d"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.asl",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.asl",
+					"match": "\\\\."
+				}
+			]
+		},
+		"stringsWithFiB": {
+			"name": "string.quoted.double.asl",
+			"begin": "'",
+			"end": "'",
+			"patterns": [
+				{
+					"name": "constant.character.escape.asl",
+					"match": "\\$\\(|\\)|\\\\."
+				}
+			]
+		},
+		"booleans":{
+			 "patterns": [
+				 { 
+					"name":"keyword.control.asl",
+					"match": "\\b(true|false)\\b"
+				}
+			 ]
+		},
+		"comments":{
+			"name": "comment",
+			"begin": "comment {",
+			"end": "}", 
+				"patterns": []
+
+			}
+	},
+	"scopeName": "source.altitude"
+}
