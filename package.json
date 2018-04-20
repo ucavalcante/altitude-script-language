@@ -2,7 +2,7 @@
     "name": "altitude-script-language",
     "displayName": "Altitude Script Language",
     "description": "Language suport extension for altitude  script language.",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "ucavalcante",
     "engines": {
         "vscode": "^1.20.0"
