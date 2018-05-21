@@ -20,7 +20,7 @@
         "languages": [{
             "id": "asl",
             "aliases": ["Altitude Script", "asl"],
-            "extensions": [".ags",".irs",".gem",".agm",".irm",".wfs",".bak"],
+            "extensions": [".ags",".irs",".gem",".agm",".irm",".bak"],
             "configuration": "./language-configuration.json"
         }],
         "grammars": [{
