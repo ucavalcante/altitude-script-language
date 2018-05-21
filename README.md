@@ -9,9 +9,10 @@ https://github.com/ucavalcante/altitude-script-language.git
 
 ## Features
 
+* basic colorization
 ![Colorization](images/img_01.png)
 
-Surround with comment using `CTRL+K,CTRL+C`
+* Surround with comment using `CTRL+K,CTRL+C`
 
 ## Requirements
 
