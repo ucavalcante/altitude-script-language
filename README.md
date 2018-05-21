@@ -11,17 +11,27 @@ https://github.com/ucavalcante/altitude-script-language.git
 
 ![Colorization](images/img_01.png)
 
+Surround with comment using `CTRL+K,CTRL+C`
+
 ## Requirements
 
 Prior knowledge of the ASL programming language because it does not yet have the Intelisense feature.
 
 ## Release Notes
 
-Readme adjust.
+### 0.0.3
+
+* Remove suport for .wfs this file is suporrted by xml pattern.
+* Autoclosing for FIB brackets `$()`
+* Keyboard shortcut suport for comments `CTRL+K,CTRL+C`
+
+### 0.0.2
+
+* Publishing in Marketplace
 
 ### 0.0.1
 
-Initial release of for basic colorization
+* Initial release for basic colorization
 
 -----------------------------------------------------------------------------------------------------------
 
